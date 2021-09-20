@@ -1,0 +1,122 @@
+{
+  "menu": {
+    "starters": [
+      {
+        "name": "French Onion Soup",
+        "price": 10.5,
+        "description": "Rustic French onion soup with a sourdough croute and melted comté cheese"
+      },
+      {
+        "name": "Tomates Breton",
+        "price": 9.9,
+        "description": "Mixed Breton Heritage Homatoes with soft goat cheese, black olives, shallots and capers served on grilled sourdough bread"
+      },
+      {
+        "name": "Chicken Liver Parfait",
+        "price": 12.3,
+        "description": "Chicken liver pate with toasted brioche and spiced apple chutney"
+      },
+      {
+        "name": "Calamari",
+        "price": 18.5,
+        "description": "Breadcrumbed squid sautéed in garlic, lemon and parsley with tartare sauce"
+      },
+      {
+        "name": "Tuna Carpaccio",
+        "price": 17.5,
+        "description": "Sliced, lightly seared raw yellowfin tuna with sauce vierge and black olives"
+      }
+    ],
+    "light-mains": [
+      {
+        "name": "Spinach & Mushroom Crepes",
+        "price": 9.9,
+        "description": "Baked crepes with wild mushrooms, spinach and gruyère cheese"
+      },
+      {
+        "name": "Goat's Cheese Salad",
+        "price": 9.5,
+        "description": "Warm goat cheese and roasted vegetable salad with black olive tapenade crostini"
+      },
+      {
+        "name": "Chicken & Walnut Salad",
+        "price": 13.9,
+        "description": "Chargrilled chicken with avocado, baby gem lettuce, baby spinach, shallots, french beans, walnuts and mustard dressing"
+      },
+      {
+        "name": "Butternut Squash Risotto",
+        "price": 14.0,
+        "description": "Butternut squash and baby spinach risotto with parmesan and avocado sauce"
+      },
+      {
+        "name": "Tuna Nicoise",
+        "price": 15.5,
+        "description": "Chargrilled fresh tuna steak on classic nicoise salad with french beans, cherry tomatoes, peppers, eggs and red onion. Served medium-rare"
+      },
+      {
+        "name": "Salmon",
+        "price": 18.5,
+        "description": "Chargrilled salmon with levander, lemon juice and quinoa sprinkles"
+      }
+    ],
+    "meat-and-fish": [
+      {
+        "name": "Escalope de Veau",
+        "price": 18.9,
+        "description": "Sautéed breaded veal escalope with watercress, lemon and sour cream"
+      },
+      {
+        "name": "Roast Duck Filet",
+        "price": 21,
+        "description": "Roasted duck filet, served medium-rare,, with griottine cherry juice and red onion bites"
+      },
+      {
+        "name": "Beef Butterfly Filet",
+        "price": 22,
+        "description": "Chargrilled butterfly fillet, served rare to medium, with potato-parmesan puree and broccoli romanesco"
+      },
+      {
+        "name": "Traditional Fish Stew",
+        "price": 20,
+        "description": "Our famous fish stew of sea bass, mussels, prawns, squid, with tomato, chilli, white wine and avocado"
+      },
+      {
+        "name": "Grilled Haddock",
+        "price": 20,
+        "description": "Grilled haddock served with baked baby-potatoes, red onions and a side of sourdough bread"
+      }
+    ],
+    "wine": [
+      {
+        "name": "Charbono, Shyypoke Calistoga",
+        "price": 65,
+        "age": 2001
+      },
+      {
+        "name": "Cabernet Sauvignon, Hunt & Harvest",
+        "price": 70,
+        "age": 2002
+      },
+      {
+        "name": "Traditional Red, Napa Valley",
+        "price": 55,
+        "age": 2003
+      },
+      {
+        "name": "Ard Six-Seated Cloud",
+        "price": 75,
+        "age": 2000
+      },
+      {
+        "name": "Pine Ridge Chenin Blanc, Viogner",
+        "price": 110,
+        "age": 1999
+      },
+      {
+        "name": "Pride Chardonnay, Napa Valley",
+        "price": 130,
+        "age": 1999
+      }
+    ]
+  }
+}
