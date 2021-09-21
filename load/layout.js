@@ -13,8 +13,6 @@ export default function layout() {
   //   buttons
   buttonGenerator();
 }
-
-// TODO I may want to export this later on
 function elementCreator(el, elClass, elClass2 = elClass) {
   const elClassArray = [elClass, elClass2];
   const element = document.createElement(`${el}`);
@@ -23,10 +21,11 @@ function elementCreator(el, elClass, elClass2 = elClass) {
 }
 function buttonGenerator() {
   const nav = document.querySelector(".button-wrapper");
-  const text = ["Starters", `Light & Tasty`, "Grilled Mains", "Wines"];
-  for (let i = 0; i < 4; i++) {
+  const text = ["Starters", `Light`, "Grilled", "Wines", "Contact"];
+  for (let i = 0; i < text.length; i++) {
     const button = elementCreator("button", `button${i}`, "button");
     button.textContent = text[i];
     nav.appendChild(button);
   }
 }
+export { elementCreator as create };
