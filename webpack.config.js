@@ -4,36 +4,25 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   mode: "development",
   entry: "./src/index.js",
-  devtool: "inline-source-map",
+  devtool: "source-map",
   plugins: [
     new HtmlWebpackPlugin({
       title: "Restaurant Page",
       inject: "body",
-      templateContent: ({ htmlWebpackPlugin }) => `
-      <!DOCTYPE html>
-  <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Restaurant Page</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="developedbygeo" content="Restaurant Menu">
-  </head>
-  <body>
-      <main class="main"></main>
-  </body>
-</html>`,
+      template: "./src/index.html",
     }),
   ],
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
+    assetModuleFilename: "img/[name]-[hash:3].[ext][query]",
   },
   module: {
     rules: [
       {
-        test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        test: /\.(s(a|c)ss)$/,
+        use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
