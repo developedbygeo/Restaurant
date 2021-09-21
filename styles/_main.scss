@@ -5,7 +5,7 @@ header {
   color: $cultured;
 }
 nav {
-  @include grid(repeat(4, 1fr), 1fr);
+  @include grid(repeat(5, 1fr), 1fr);
   gap: 1rem;
   width: 95%;
   height: 100%;
@@ -15,7 +15,7 @@ body {
   height: 100vh;
   position: relative;
   @include grid(1fr, 0.3fr 1.5fr);
-  background: url("../load/restaurant-landing.jpg");
+  background: url("../load/img/restaurant-landing.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
