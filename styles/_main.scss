@@ -1,0 +1,38 @@
+header {
+  height: 17vh;
+  background: transparent;
+  @include grid(1fr, 1fr 0.75fr);
+  color: $cultured;
+}
+nav {
+  @include grid(repeat(4, 1fr), 1fr);
+  gap: 1rem;
+  width: 95%;
+  height: 100%;
+  margin: auto;
+}
+body {
+  height: 100vh;
+  position: relative;
+  @include grid(1fr, 0.3fr 1.5fr);
+  background: url("../load/restaurant-landing.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main {
+  height: 83vh;
+  position: relative;
+}
+.logo-wrapper {
+  @include flex(center, center, row);
+}
+.button {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.24);
+  color: $cultured;
+  border: 1px solid $cultured;
+  border-radius: 0.5rem;
+}
