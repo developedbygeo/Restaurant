@@ -4,118 +4,140 @@
       {
         "name": "French Onion Soup",
         "price": 10.5,
-        "description": "Rustic French onion soup with a sourdough croute and melted comté cheese"
+        "description": "Rustic French onion soup with a sourdough croute and melted comté cheese",
+        "id": "soup"
       },
       {
         "name": "Tomates Breton",
         "price": 9.9,
-        "description": "Mixed Breton Heritage Homatoes with soft goat cheese, black olives, shallots and capers served on grilled sourdough bread"
+        "description": "Mixed Breton Heritage Homatoes with soft goat cheese, chia seeds, black olives, shallots and capers served on grilled sourdough bread",
+        "id": "tomates"
       },
       {
         "name": "Chicken Liver Parfait",
         "price": 12.3,
-        "description": "Chicken liver pate with toasted brioche and spiced apple chutney"
+        "description": "Chicken liver pate with toasted brioche and spiced apple chutney",
+        "id": "chicken"
       },
       {
         "name": "Calamari",
         "price": 18.5,
-        "description": "Breadcrumbed squid sautéed in garlic, lemon and parsley with tartare sauce"
+        "description": "Breadcrumbed squid sautéed in garlic, lemon and parsley with tartare sauce",
+        "id": "calamari"
       },
       {
         "name": "Tuna Carpaccio",
         "price": 17.5,
-        "description": "Sliced, lightly seared raw yellowfin tuna with sauce vierge and black olives"
+        "description": "Sliced, lightly seared raw yellowfin tuna with sauce vierge and black olives",
+        "id": "carpaccio"
       }
     ],
     "light": [
       {
         "name": "Spinach & Mushroom Crepes",
         "price": 9.9,
-        "description": "Baked crepes with wild mushrooms, spinach and gruyère cheese"
+        "description": "Baked crepes with wild mushrooms, spinach and gruyère cheese",
+        "id": "crepes"
       },
       {
         "name": "Goat's Cheese Salad",
         "price": 9.5,
-        "description": "Warm goat cheese and roasted vegetable salad with black olive tapenade crostini"
+        "description": "Warm goat cheese and roasted vegetable salad with black olive tapenade crostini",
+        "id": "goat"
       },
       {
         "name": "Chicken & Walnut Salad",
         "price": 13.9,
-        "description": "Chargrilled chicken with avocado, baby gem lettuce, baby spinach, shallots, french beans, walnuts and mustard dressing"
+        "description": "Chargrilled chicken with avocado, baby gem lettuce, egg, tomato, baby spinach, shallots, french beans, walnuts and mustard dressing",
+        "id": "walnut"
       },
       {
         "name": "Butternut Squash Risotto",
         "price": 14.0,
-        "description": "Butternut squash and baby spinach risotto with parmesan and avocado sauce"
+        "description": "Butternut squash and baby spinach risotto with parmesan and avocado sauce",
+        "id": "butternut"
       },
       {
-        "name": "Tuna Nicoise",
+        "name": "Salmon Nicoise",
         "price": 15.5,
-        "description": "Chargrilled fresh tuna steak on classic nicoise salad with french beans, cherry tomatoes, peppers, eggs and red onion. Served medium-rare"
+        "description": "Chargrilled fresh salmon filet on classic nicoise salad with french beans, cherry tomatoes, peppers, eggs and red onion. Served medium-rare.",
+        "id": "nicoise"
       },
       {
-        "name": "Salmon",
+        "name": "Salmon Filet",
         "price": 18.5,
-        "description": "Chargrilled salmon with levander, lemon juice and quinoa sprinkles"
+        "description": "Chargrilled salmon with levander, lemon juice and quinoa sprinkles",
+        "id": "filet"
       }
     ],
     "grilled": [
       {
         "name": "Escalope de Veau",
         "price": 18.9,
-        "description": "Sautéed breaded veal escalope with watercress, lemon and sour cream"
+        "description": "Sautéed breaded veal escalope with watercress, lemon and sour cream",
+        "id": "escalope"
       },
       {
         "name": "Roast Duck Filet",
         "price": 21,
-        "description": "Roasted duck filet, served medium-rare,, with griottine cherry juice and red onion bites"
+        "description": "Roasted duck filet, served medium-rare,, with griottine cherry juice and red onion bites",
+        "id": "duck"
       },
       {
         "name": "Beef Butterfly Filet",
         "price": 22,
-        "description": "Chargrilled butterfly fillet, served rare to medium, with potato-parmesan puree and broccoli romanesco"
+        "description": "Chargrilled butterfly fillet, served rare to medium, with potato-parmesan puree and broccoli romanesco",
+        "id": "beef"
       },
       {
         "name": "Traditional Fish Stew",
         "price": 20,
-        "description": "Our famous fish stew of sea bass, mussels, prawns, squid, with tomato, chilli, white wine and avocado"
+        "description": "Our famous fish stew of sea bass, mussels, prawns, squid, with tomato, chilli, white wine and avocado",
+        "id": "stew"
       },
       {
         "name": "Grilled Haddock",
         "price": 20,
-        "description": "Grilled haddock served with baked baby-potatoes, red onions and a side of sourdough bread"
+        "description": "Grilled haddock served with baked baby-potatoes, croutons, red onions and a side of sourdough bread",
+        "id": "haddock"
       }
     ],
     "wine": [
       {
-        "name": "Charbono, Shyypoke Calistoga",
+        "name": "Cabernet Sauvignon, McGuigan",
         "price": 65,
-        "age": 2001
+        "age": 2001,
+        "id": "mcguigan"
       },
       {
-        "name": "Cabernet Sauvignon, Hunt & Harvest",
+        "name": "Cabernet Sauvignon, The Waxed Bat",
         "price": 70,
-        "age": 2002
+        "age": 2002,
+        "id": "waxed"
       },
       {
-        "name": "Traditional Red, Napa Valley",
+        "name": "Shiraz, Jacob's Creek",
         "price": 55,
-        "age": 2003
+        "age": 2003,
+        "id": "creek"
       },
       {
-        "name": "Ard Six-Seated Cloud",
+        "name": "Pino Grigio, Dino",
         "price": 75,
-        "age": 2000
+        "age": 2000,
+        "id": "dino"
       },
       {
-        "name": "Pine Ridge Chenin Blanc, Viogner",
+        "name": "Chardonnay, Yering Station",
         "price": 110,
-        "age": 1999
+        "age": 1999,
+        "id": "yering"
       },
       {
-        "name": "Pride Chardonnay, Napa Valley",
+        "name": "Champagne, Veuve Clicquot",
         "price": 130,
-        "age": 1999
+        "age": 1999,
+        "id": "veuve"
       }
     ]
   }
