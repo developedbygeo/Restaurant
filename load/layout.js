@@ -1,3 +1,5 @@
+import menuHandler from "/structure/body.structure.js";
+
 export default function headerLayout() {
   // adjust the header's content
   const header = document.querySelector("header");
@@ -42,6 +44,11 @@ function addContent(category) {
     const identifier = element.classList[2].substring(
       element.classList[2].indexOf("-") + 1
     );
+    const categoryIdentifier = element.classList[3];
+    const targetedObject = menuHandler(
+      `${categoryIdentifier}`,
+      `${identifier}`
+    );
     const imgHTML = element.children[0];
     // const img = require(`/src/img/${category}/${`${identifier}`}.jpg`);
     const img = `/src/img/${category}/${`${identifier}`}.jpg`;
@@ -50,11 +57,12 @@ function addContent(category) {
     imgHTML.style.backgroundImage = `url(${img})`;
 
     // h2 handling
-    element.children[1].textContent = "Yo";
+
+    element.children[1].textContent = targetedObject.name;
     // desc handling
-    element.children[2].textContent = "Free";
+    element.children[2].textContent = targetedObject.description;
     // price handling
-    element.children[3].textContent = "$5";
+    element.children[3].textContent = `$${targetedObject.price}`;
   });
 
   // const target = `${category}-${identifier}`;
