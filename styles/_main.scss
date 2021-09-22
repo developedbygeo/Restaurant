@@ -22,7 +22,12 @@ body {
 }
 .main {
   height: 83vh;
+  height: auto;
+  margin-top: 1rem;
   position: relative;
+  @include grid(repeat(3, 0.5fr), repeat(2, 1fr));
+  row-gap: 1rem;
+  justify-items: center;
 }
 .logo-wrapper {
   @include flex(center, center, row);
@@ -35,4 +40,17 @@ body {
   color: $cultured;
   border: 1px solid $cultured;
   border-radius: 0.5rem;
+}
+.menu-item {
+  color: $cultured;
+  @include grid(1fr, 2fr repeat(3, 0.4fr));
+  // height: 5vh;
+  width: 100%;
+  height: 80%;
+  img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
