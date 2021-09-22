@@ -2,26 +2,26 @@
   "menu": {
     "starters": [
       {
-        "name": "French Onion Soup",
+        "name": "French Soup",
         "price": 10.5,
         "description": "Rustic French onion soup with a sourdough croute and melted comté cheese",
         "id": "soup"
       },
       {
         "name": "Tomates Breton",
-        "price": 9.9,
-        "description": "Mixed Breton Heritage Homatoes with soft goat cheese, chia seeds, black olives, shallots and capers served on grilled sourdough bread",
+        "price": 10.5,
+        "description": "Mixed Breton tomatoes with soft goat cheese, chia seeds, shallots and capers.",
         "id": "tomates"
       },
       {
-        "name": "Chicken Liver Parfait",
+        "name": "Liver Parfait",
         "price": 12.3,
         "description": "Chicken liver pate with toasted brioche and spiced apple chutney",
         "id": "chicken"
       },
       {
-        "name": "Calamari",
-        "price": 18.5,
+        "name": "Grilled Calamari",
+        "price": 19.5,
         "description": "Breadcrumbed squid sautéed in garlic, lemon and parsley with tartare sauce",
         "id": "calamari"
       },
@@ -30,6 +30,12 @@
         "price": 17.5,
         "description": "Sliced, lightly seared raw yellowfin tuna with sauce vierge and black olives",
         "id": "carpaccio"
+      },
+      {
+        "name": "Shrimp Bouquet",
+        "price": 25,
+        "description": "Shrimp, garnished with tomato marmelade,goat cheese and al dente presto pasta",
+        "id": "bouquet"
       }
     ],
     "light": [
@@ -100,6 +106,12 @@
         "price": 20,
         "description": "Grilled haddock served with baked baby-potatoes, croutons, red onions and a side of sourdough bread",
         "id": "haddock"
+      },
+      {
+        "name": "Pasta on the Grill",
+        "price": 18,
+        "description": "Al dente pasta, served with grilled beef chops, mixed with our unique tomato-curry sauce. Garnished with coliander and wine",
+        "id": "pasta"
       }
     ],
     "wine": [
