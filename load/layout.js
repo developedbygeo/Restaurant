@@ -1,4 +1,4 @@
-export default function layout() {
+export default function headerLayout() {
   // adjust the header's content
   const header = document.querySelector("header");
   const titleWrapper = elementCreator("div", "logo-wrapper");
@@ -13,8 +13,14 @@ export default function layout() {
   //   buttons
   buttonGenerator();
 }
-function elementCreator(el, elClass, elClass2 = elClass) {
-  const elClassArray = [elClass, elClass2];
+function elementCreator(
+  el,
+  elClass,
+  elClass2 = elClass,
+  elClass3 = elClass,
+  elClass4 = elClass
+) {
+  const elClassArray = [elClass, elClass2, elClass3, elClass4];
   const element = document.createElement(`${el}`);
   element.classList.add(...elClassArray);
   return element;
@@ -28,4 +34,33 @@ function buttonGenerator() {
     nav.appendChild(button);
   }
 }
-export { elementCreator as create };
+function addContent(category) {
+  const elementList = document.querySelectorAll(`.${category}`);
+  console.log(elementList);
+  elementList.forEach((element) => {
+    // getting identifier from each parent element (eg: starters-chicken -> chicken)
+    const identifier = element.classList[2].substring(
+      element.classList[2].indexOf("-") + 1
+    );
+    const imgHTML = element.children[0];
+    // const img = require(`/src/img/${category}/${`${identifier}`}.jpg`);
+    const img = `/src/img/${category}/${`${identifier}`}.jpg`;
+
+    // img handling
+    imgHTML.style.backgroundImage = `url(${img})`;
+
+    // h2 handling
+    element.children[1].textContent = "Yo";
+    // desc handling
+    element.children[2].textContent = "Free";
+    // price handling
+    element.children[3].textContent = "$5";
+  });
+
+  // const target = `${category}-${identifier}`;
+  // const htmlImage = document.querySelector(`${target} img`);
+  // const htmlTitle = document.querySelector(`${target} h2`);
+  // const htmlDesc = document.querySelector(`${target} p`);
+  // const htmlPrice = document.querySelector(`${target} span`);
+}
+export { elementCreator as create, addContent };
