@@ -1,5 +1,6 @@
-import menuHandler from "/structure/body.structure.js";
+import menuHandler from "/structure/menu.handle.js";
 
+// creates the header layout structure
 export default function headerLayout() {
   // adjust the header's content
   const header = document.querySelector("header");
@@ -7,7 +8,7 @@ export default function headerLayout() {
   const title = elementCreator("h1", "logo");
   const nav = elementCreator("nav", "button-wrapper");
   // logo settings
-  title.textContent = `Di Giorgio's`;
+  title.innerHTML = `<span class="color-a">Di</span> <span class="color-b">Gior</span><span class="color-c">gio</span>`;
   titleWrapper.appendChild(title);
   header.appendChild(titleWrapper);
   // nav
@@ -15,6 +16,7 @@ export default function headerLayout() {
   //   buttons
   buttonGenerator();
 }
+// creates elements
 function elementCreator(
   el,
   elClass,
@@ -27,18 +29,27 @@ function elementCreator(
   element.classList.add(...elClassArray);
   return element;
 }
+// generates the nav buttons
 function buttonGenerator() {
   const nav = document.querySelector(".button-wrapper");
   const text = ["Starters", `Light`, "Grilled", "Wines", "Contact"];
   for (let i = 0; i < text.length; i++) {
-    const button = elementCreator("button", `button${i}`, "button");
+    const button = elementCreator(
+      "button",
+      `button${i}`,
+      "button",
+      "button-active"
+    );
     button.textContent = text[i];
+    if (text[i] === "Contact") {
+      button.setAttribute("class", "contact contact-active");
+    }
     nav.appendChild(button);
   }
 }
+// adds content
 function addContent(category) {
   const elementList = document.querySelectorAll(`.${category}`);
-  console.log(elementList);
   elementList.forEach((element) => {
     // getting identifier from each parent element (eg: starters-chicken -> chicken)
     const identifier = element.classList[2].substring(
