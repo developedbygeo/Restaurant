@@ -2,77 +2,77 @@
   "menu": {
     "starters": [
       {
-        "name": "French Soup",
+        "name": "Grandma's Soup",
         "price": 10.5,
-        "description": "Rustic French onion soup with a sourdough croute and melted comté cheese",
+        "description": "Onion soup with sourdough croute & melted comté cheese.",
         "id": "soup"
       },
       {
         "name": "Tomates Breton",
         "price": 10.5,
-        "description": "Mixed Breton tomatoes with soft goat cheese, chia seeds, shallots and capers.",
+        "description": "Served with goat cheese, chia seeds, shallots, peppers & capers.",
         "id": "tomates"
       },
       {
-        "name": "Liver Parfait",
+        "name": "Chicken Liver Parfait",
         "price": 12.5,
-        "description": "Chicken liver pate with toasted brioche and spiced apple chutney",
+        "description": "Liver pate with toasted brioche & spiced apple chutney.",
         "id": "chicken"
       },
       {
         "name": "Grilled Calamari",
-        "price": 19.5,
-        "description": "Breadcrumbed squid sautéed in garlic, lemon and parsley with tartare sauce",
+        "price": 20,
+        "description": "Squid sautéed in garlic, lemon & parsley with wine sauce.",
         "id": "calamari"
       },
       {
         "name": "Tuna Carpaccio",
         "price": 17.5,
-        "description": "Sliced, lightly seared raw yellowfin tuna with sauce vierge and black olives",
+        "description": "Seared raw yellowfin tuna with sauce vierge & black olives.",
         "id": "carpaccio"
       },
       {
         "name": "Shrimp Bouquet",
         "price": 25,
-        "description": "Shrimp, garnished with tomato marmelade,goat cheese and al dente presto pasta",
+        "description": "Garnished with tomato sauce,goat cheese & al dente presto pasta.",
         "id": "bouquet"
       }
     ],
     "light": [
       {
-        "name": "Spinach & Mushroom Crepes",
-        "price": 9.9,
-        "description": "Baked crepes with wild mushrooms, spinach and gruyère cheese",
+        "name": "Savory Crepes",
+        "price": 10.5,
+        "description": "Baked crepes with wild mushrooms, spinach & gruyère cheese.",
         "id": "crepes"
       },
       {
-        "name": "Goat's Cheese Salad",
+        "name": "Goat Cheese Salad",
         "price": 9.5,
-        "description": "Warm goat cheese and roasted vegetable salad with black olive tapenade crostini",
+        "description": "Warm cheese & roasted vegetables with black olive tapenade.",
         "id": "goat"
       },
       {
-        "name": "Chicken & Walnut Salad",
-        "price": 13.9,
-        "description": "Chargrilled chicken with avocado, baby gem lettuce, egg, tomato, baby spinach, shallots, french beans, walnuts and mustard dressing",
+        "name": "Chicken & Walnut",
+        "price": 13,
+        "description": "Chargrilled with avocado, lettuce, egg, spinach & walnuts.",
         "id": "walnut"
       },
       {
-        "name": "Butternut Squash Risotto",
+        "name": "Butternut Risotto",
         "price": 14.0,
-        "description": "Butternut squash and baby spinach risotto with parmesan and avocado sauce",
+        "description": "Squash, baby spinach with parmesan & avocado.",
         "id": "butternut"
       },
       {
         "name": "Salmon Nicoise",
         "price": 15.5,
-        "description": "Chargrilled fresh salmon filet on classic nicoise salad with french beans, cherry tomatoes, peppers, eggs and red onion. Served medium-rare.",
+        "description": "Chargrilled, nicoise salad with beans, cherry tomatoes & red onion.",
         "id": "nicoise"
       },
       {
-        "name": "Salmon Filet",
+        "name": "Levander Salmon Filet",
         "price": 18.5,
-        "description": "Chargrilled salmon with levander, lemon juice and quinoa sprinkles",
+        "description": "Chargrilled salmon with levander, lemon & quinoa sprinkles.",
         "id": "filet"
       }
     ],
@@ -80,75 +80,75 @@
       {
         "name": "Escalope de Veau",
         "price": 18.9,
-        "description": "Sautéed breaded veal escalope with watercress, lemon and sour cream",
+        "description": "Sautéed breaded veal escalope with watercress, lemon & sour cream.",
         "id": "escalope"
       },
       {
         "name": "Roast Duck Filet",
         "price": 21,
-        "description": "Roasted duck filet, served medium-rare,, with griottine cherry juice and red onion bites",
+        "description": "Medium-rare, with griottine cherry juice & red onion bites.",
         "id": "duck"
       },
       {
-        "name": "Beef Butterfly Filet",
+        "name": "Butterfly Filet",
         "price": 22,
-        "description": "Chargrilled butterfly fillet, served rare to medium, with potato-parmesan puree and broccoli romanesco",
+        "description": "Chargrilled, with potato-parmesan puree & broccoli romanesco.",
         "id": "beef"
       },
       {
         "name": "Traditional Fish Stew",
         "price": 20,
-        "description": "Our famous fish stew of sea bass, mussels, prawns, squid, with tomato, chilli, white wine and avocado",
+        "description": "Sea bass, prawns, squid, mussels, chilli & wine sauce.",
         "id": "stew"
       },
       {
         "name": "Grilled Haddock",
         "price": 20,
-        "description": "Grilled haddock served with baked baby-potatoes, croutons, red onions and a side of sourdough bread",
+        "description": "Grilled with baby-potatoes, onions & sourdough bread.",
         "id": "haddock"
       },
       {
         "name": "Pasta on the Grill",
         "price": 18,
-        "description": "Al dente pasta, served with grilled beef chops, mixed with our unique tomato-curry sauce. Garnished with coliander and wine",
+        "description": "Al dente, with beef chops & our unique tomato-curry sauce.",
         "id": "pasta"
       }
     ],
-    "wine": [
+    "wines": [
       {
-        "name": "Cabernet Sauvignon, McGuigan",
+        "name": "Cabernet Sauvignon",
         "price": 65,
-        "age": 2001,
+        "description": "McGuigan, 2001",
         "id": "mcguigan"
       },
       {
-        "name": "Cabernet Sauvignon, The Waxed Bat",
+        "name": "Cabernet Sauvignon",
         "price": 70,
-        "age": 2002,
+        "description": "Waxed Bat, 2002",
         "id": "waxed"
       },
       {
-        "name": "Shiraz, Jacob's Creek",
+        "name": "Shiraz Vintage",
         "price": 55,
-        "age": 2003,
+        "description": "Jacob's Creek, 2003",
         "id": "creek"
       },
       {
-        "name": "Pino Grigio, Dino",
+        "name": "Pinot Grigio Trebbiano",
         "price": 75,
-        "age": 2000,
+        "description": "Dino, 2000",
         "id": "dino"
       },
       {
-        "name": "Chardonnay, Yering Station",
+        "name": "Chardonnay Reserve",
         "price": 110,
-        "age": 1999,
+        "description": "Yering, 1999",
         "id": "yering"
       },
       {
-        "name": "Champagne, Veuve Clicquot",
+        "name": "Signature Champagne",
         "price": 130,
-        "age": 1999,
+        "description": "Veuve, 2019",
         "id": "veuve"
       }
     ]
