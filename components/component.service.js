@@ -41,14 +41,15 @@ export default class Component {
     );
     // creates wrapper divs and div content and appends to main
     this.keys.forEach((key) => {
-      let tag = "span";
-      let wrapper = create("div", `${key}-wrapper`, "wrapper");
+      let tag;
       if (key === "img") tag = "img";
       if (key === "name") tag = "h2";
       if (key === "description") tag = "p";
-      // TODO need to split this to add populateImages in there
-      let content = wrapper.appendChild(create(`${tag}`, `${key}-${tag}`));
-      parentElement.appendChild(content);
+      if (key === "price") tag = "span";
+      const content = create(`${tag}`, `${key}`);
+      const elementWrapper = create("div", `${tag}-wrapper`, `${key}`);
+      elementWrapper.appendChild(content);
+      parentElement.appendChild(elementWrapper);
     });
     main.appendChild(parentElement);
   }
