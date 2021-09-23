@@ -49,26 +49,16 @@ function addContent(category) {
       `${categoryIdentifier}`,
       `${identifier}`
     );
-    const imgHTML = element.children[0];
-    // const img = require(`/src/img/${category}/${`${identifier}`}.jpg`);
+    // image handling
+    const imgElement = element.children[0].children[0];
     const img = `/src/img/${category}/${`${identifier}`}.jpg`;
-
-    // img handling
-    imgHTML.style.backgroundImage = `url(${img})`;
-
+    imgElement.setAttribute("src", img);
     // h2 handling
-
-    element.children[1].textContent = targetedObject.name;
-    // desc handling
-    element.children[2].textContent = targetedObject.description;
-    // price handling
-    element.children[3].textContent = `$${targetedObject.price}`;
+    element.children[1].children[0].textContent = targetedObject.name;
+    // // desc handling
+    element.children[2].children[0].textContent = targetedObject.description;
+    // // price handling
+    element.children[3].children[0].textContent = `$${targetedObject.price}`;
   });
-
-  // const target = `${category}-${identifier}`;
-  // const htmlImage = document.querySelector(`${target} img`);
-  // const htmlTitle = document.querySelector(`${target} h2`);
-  // const htmlDesc = document.querySelector(`${target} p`);
-  // const htmlPrice = document.querySelector(`${target} span`);
 }
 export { elementCreator as create, addContent };
