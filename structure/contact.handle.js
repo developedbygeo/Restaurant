@@ -2,8 +2,7 @@ import { resetDOM } from "./menu.change.js";
 import contactData from "/contact-data.json";
 import { create } from "../load/layout";
 
-// TODO need a new class for div too
-
+// renders the contact page & content
 function createContactPage() {
   const main = document.querySelector(".main");
   const { phone, address, email } = contactData.data;
@@ -33,14 +32,10 @@ function createContactPage() {
   });
   populateContactMap();
 }
-
+// populates the contact page with the map img
 function populateContactMap() {
   const mapWrapper = document.querySelector(".map-wrapper");
   const img = mapWrapper.appendChild(create("img", "map-img"));
   img.setAttribute("src", "/src/img/map/location-img.JPG");
 }
-
-export default function enableContactButton() {
-  const contactBtn = document.querySelector(".contact");
-  contactBtn.addEventListener("click", createContactPage);
-}
+export { createContactPage };
