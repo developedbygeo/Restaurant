@@ -37,6 +37,9 @@ body {
 }
 .logo-wrapper {
   @include flex(center, center, row);
+  .logo {
+    cursor: pointer;
+  }
   .color-a,
   .color-b,
   .color-c {
@@ -61,18 +64,20 @@ body {
   cursor: pointer;
   background: rgba(0, 0, 0, 0.24);
   color: $cultured;
-  border: 1px solid $cultured;
+  border: 0.5px solid $cultured;
   border-radius: 0.5rem;
   transition: all 200ms ease-in-out;
 }
 .button:hover,
 .button:active,
+.button-active,
+.contact-active,
 .contact:hover,
 .contact:active {
   border: 2px solid $cultured;
 }
-.button-active:after,
-.contact-active:after {
+.button:after,
+.contact:after {
   position: absolute;
   content: "";
   height: 1%;
@@ -84,10 +89,10 @@ body {
   background: black;
   transition: all 200ms ease-in-out;
 }
-.button-active:hover:after,
+.button-active:after,
 .button-active:active:after,
-.contact:hover:after,
-.contact:active:after {
+.contact-active:after,
+.contact-active:after {
   width: 60%;
   background: $cultured;
   height: 3%;
@@ -199,4 +204,31 @@ body {
 }
 .phone-element::after {
   background: $ita-red;
+}
+footer {
+  height: 4vh;
+  background: transparent;
+  @include flex(center, center, row);
+  color: $cultured;
+  .footer-p {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+  }
+  .footer-img {
+    margin-left: 0.5rem;
+    height: 100%;
+    svg {
+      color: $cultured;
+      height: 100%;
+      font-size: 1.3rem;
+      -webkit-font-smoothing: antialiased;
+      transition: all 350ms ease;
+    }
+    svg:hover {
+      transform: rotate(360deg) scale(1.1);
+    }
+  }
+}
+.svg-inline {
+  font-size: 1.5rem;
 }
