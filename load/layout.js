@@ -1,4 +1,6 @@
+import { createContactPage } from "../structure/contact.handle";
 import menuHandler from "/structure/menu.handle.js";
+import "../node_modules/@fortawesome/fontawesome-free/js/all";
 
 // creates the header layout structure
 export default function headerLayout() {
@@ -15,6 +17,19 @@ export default function headerLayout() {
   header.appendChild(nav);
   //   buttons
   buttonGenerator();
+}
+// creates the footer and the respective wrappers/elements
+function createFooter() {
+  const body = document.querySelector("body");
+  const footer = body.appendChild(elementCreator("footer", "footer"));
+  const textWrapper = footer.appendChild(elementCreator("div", "footer-text"));
+  const imgWrapper = footer.appendChild(elementCreator("div", "footer-img"));
+  const text = textWrapper.appendChild(elementCreator("p", "footer-p"));
+  const link = imgWrapper.appendChild(elementCreator("a", "link"));
+  link.setAttribute("href", "http://www.github.com/developedbygeo");
+  link.setAttribute("target", "_blank");
+  const githubSVG = link.appendChild(elementCreator("i", "fab", "fa-github"));
+  text.textContent = "\u00A9developedbygeo";
 }
 // creates elements
 function elementCreator(
@@ -34,15 +49,11 @@ function buttonGenerator() {
   const nav = document.querySelector(".button-wrapper");
   const text = ["Starters", `Light`, "Grilled", "Wines", "Contact"];
   for (let i = 0; i < text.length; i++) {
-    const button = elementCreator(
-      "button",
-      `button${i}`,
-      "button",
-      "button-active"
-    );
+    let button = elementCreator("button", `button${i}`, "button", "btn");
     button.textContent = text[i];
     if (text[i] === "Contact") {
-      button.setAttribute("class", "contact contact-active");
+      button = elementCreator("button", `btn`, "contact");
+      button.textContent = text[i];
     }
     nav.appendChild(button);
   }
@@ -72,4 +83,4 @@ function addContent(category) {
     element.children[3].children[0].textContent = `$${targetedObject.price}`;
   });
 }
-export { elementCreator as create, addContent };
+export { elementCreator as create, addContent, createFooter };
