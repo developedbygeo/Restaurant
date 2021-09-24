@@ -7,7 +7,6 @@ function initPage() {
   const main = document.querySelector("main");
   main.classList.add("main");
 }
-
 function initializeContent() {
   const startersBtn = document.querySelector(".button0");
   resetDOM();
