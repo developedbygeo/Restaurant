@@ -21,13 +21,12 @@ body {
   background-position: center;
 }
 .main {
-  height: auto;
   width: 95%;
   margin: auto;
   margin-top: 3rem;
   position: relative;
   @include grid(repeat(3, 0.5fr), repeat(2, 1fr));
-  gap: 1rem 1rem;
+  gap: 3rem 1rem;
   justify-items: center;
   align-items: center;
 }
@@ -59,14 +58,16 @@ body {
 .button,
 .contact {
   position: relative;
+  font-family: "Roboto", sans-serif;
   height: 100%;
   width: 100%;
   cursor: pointer;
   background: rgba(0, 0, 0, 0.24);
   color: $cultured;
+  font-weight: bold;
   border: 0.5px solid $cultured;
   border-radius: 0.5rem;
-  transition: all 200ms ease-in-out;
+  transition: all 100ms ease-in-out;
 }
 .button:hover,
 .button:active,
@@ -87,7 +88,7 @@ body {
   right: 0;
   width: 0%;
   background: black;
-  transition: all 200ms ease-in-out;
+  transition: all 150ms ease-in-out;
 }
 .button-active:after,
 .button-active:active:after,
@@ -100,7 +101,7 @@ body {
 
 .menu-item {
   color: $cultured;
-  @include grid(1fr, 0.7fr repeat(2, 0.4fr) 0.2fr);
+  @include grid(1fr, auto auto minmax(5vh, 8vh) minmax(auto, 3vh));
   background: rgb(0, 0, 6);
   background: linear-gradient(
     90deg,
@@ -124,18 +125,21 @@ body {
   h2 {
     margin-block: 1rem;
     text-align: left;
+    font-family: "Roboto", sans-serif;
   }
   .p-wrapper,
   .h2-wrapper {
-    width: 95%;
+    width: 80%;
     margin: auto;
   }
   p {
-    font-size: 1.4rem;
+    font-family: "Lora";
+    font-size: 1.28rem;
+    letter-spacing: 0.05rem;
     text-align: left;
   }
   .span-wrapper {
-    @include flex(flex-end, center, row);
+    @include flex(flex-end, flex-end, row);
   }
   span {
     letter-spacing: 0.15rem;
@@ -146,9 +150,9 @@ body {
   transform: scale(1.02);
 }
 .wines {
-  @include grid(1fr, 0.3fr 0.2fr 0.6fr auto);
+  @include grid(1fr, auto);
+  row-gap: 1.3rem;
 }
-// map
 .info-wrapper {
   color: $cultured;
   text-align: center;
