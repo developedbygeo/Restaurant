@@ -1,0 +1,126 @@
+@media screen and (max-width: 300px) and (max-height: 320px) {
+  html {
+    font-size: 32.5%;
+  }
+  .main {
+    margin-top: 0.5rem;
+    gap: 1rem;
+  }
+  .menu-item {
+    grid-template-rows: 19vh 11vh minmax(5vh, 17vh) minmax(auto, 3vh);
+  }
+  .description {
+    letter-spacing: normal;
+  }
+  .main-contact {
+    gap: 0;
+  }
+  footer {
+    margin-top: 1rem;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 450px) {
+  html {
+    font-size: 42%;
+  }
+}
+@media screen and (max-width: 375px) and (min-height: 739px) {
+  .main {
+    margin-top: 6rem;
+    gap: 6rem 1rem;
+  }
+  .main-contact {
+    gap: 0rem;
+  }
+  .menu-item {
+    margin-top: 2rem;
+  }
+  .wines {
+    row-gap: 3.7rem;
+    margin-top: 1rem;
+  }
+  .main-contact {
+    margin-top: 10rem;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 450px) {
+  html {
+    font-size: 44%;
+  }
+  .main {
+    margin-top: 4.5rem;
+    gap: 5rem 1rem;
+  }
+  .wines {
+    margin-top: 2rem;
+  }
+  .main-contact {
+    gap: 0;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 400px) {
+  .wines {
+    row-gap: 2.7rem;
+  }
+}
+@media screen and (max-width: 600px) and (min-height: 900px) {
+  html {
+    font-size: 55.5%;
+  }
+  .main-contact {
+    grid-template-rows: 2fr repeat(3, 0.65fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+  .main {
+    gap: 1rem;
+  }
+  .main-contact {
+    gap: 0;
+    grid-template-rows: 2fr repeat(3, minmax(5vh, 10vh));
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 833px) {
+  .menu-item {
+    grid-template-rows: auto auto minmax(5vh, 7vh) minmax(auto, 3vh);
+    img {
+      height: 100%;
+    }
+  }
+  .wines {
+    grid-template-rows: minmax(5vh, 17vh) auto minmax(5vh, 6vh) minmax(
+        auto,
+        3vh
+      );
+  }
+}
+@media screen and (min-width: 834px) and (max-width: 1024px) {
+  .wines {
+    row-gap: 2.7rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 1365px) {
+  .wines {
+    row-gap: 3.7rem;
+  }
+}
+@media screen and (max-width: 800px) and (min-height: 1279px) {
+  .main {
+    gap: 2rem 1rem;
+  }
+  .menu-item {
+    grid-template-rows: auto auto minmax(5vh, 11vh) minmax(auto, 3vh);
+  }
+  .wines {
+    grid-template-rows: auto auto minmax(auto, 5vh) minmax(auto, 3vh);
+  }
+  .main-contact {
+    gap: 0;
+    margin-top: 7.5rem;
+  }
+}
