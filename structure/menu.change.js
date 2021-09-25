@@ -75,4 +75,5 @@ export {
   resetDOM,
   enableLogoClick,
   buttonClassHandler,
+  correctMainClass,
 };
