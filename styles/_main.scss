@@ -12,7 +12,8 @@ nav {
   margin: auto;
 }
 body {
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   position: relative;
   @include grid(1fr, 0.3fr 1.5fr);
   background: url("../load/img/restaurant-landing.jpg");
@@ -23,7 +24,7 @@ body {
 .main {
   width: 95%;
   margin: auto;
-  margin-top: 3rem;
+  margin-top: 2.5rem;
   position: relative;
   @include grid(repeat(3, 0.5fr), repeat(2, 1fr));
   gap: 3rem 1rem;
@@ -31,8 +32,8 @@ body {
   align-items: center;
 }
 .main-contact {
-  @include grid(1fr, 2fr repeat(3, 0.7fr));
-  gap: 0;
+  @include grid(1fr, 2fr repeat(3, 0.75fr));
+  gap: 0rem;
 }
 .logo-wrapper {
   @include flex(center, center, row);
@@ -62,7 +63,7 @@ body {
   height: 100%;
   width: 100%;
   cursor: pointer;
-  background: rgba(0, 0, 0, 0.24);
+  background: rgba(0, 0, 0, 0.1);
   color: $cultured;
   font-weight: bold;
   border: 0.5px solid $cultured;
@@ -151,7 +152,7 @@ body {
 }
 .wines {
   @include grid(1fr, auto);
-  row-gap: 1.3rem;
+  row-gap: 1.7rem;
 }
 .info-wrapper {
   color: $cultured;
@@ -167,6 +168,9 @@ body {
 }
 .element-title::first-letter {
   text-transform: uppercase;
+}
+.map-wrapper {
+  width: 100%;
 }
 .map-img {
   height: 100%;
