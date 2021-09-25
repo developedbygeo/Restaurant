@@ -14,7 +14,7 @@
         "id": "tomates"
       },
       {
-        "name": "Chicken Liver Parfait",
+        "name": "Chicken Parfait",
         "price": 12.5,
         "description": "Liver pate with toasted brioche & spiced apple chutney.",
         "id": "chicken"
@@ -34,7 +34,7 @@
       {
         "name": "Shrimp Bouquet",
         "price": 25,
-        "description": "Garnished with tomato sauce,goat cheese & al dente presto pasta.",
+        "description": "Garnished with tomato,goat cheese & al dente presto pasta.",
         "id": "bouquet"
       }
     ],
@@ -46,8 +46,8 @@
         "id": "crepes"
       },
       {
-        "name": "Goat Cheese Salad",
-        "price": 9.5,
+        "name": "Cheese Salad",
+        "price": 11.5,
         "description": "Warm cheese & roasted vegetables with black olive tapenade.",
         "id": "goat"
       },
@@ -70,7 +70,7 @@
         "id": "nicoise"
       },
       {
-        "name": "Levander Salmon Filet",
+        "name": "Levander Filet",
         "price": 18.5,
         "description": "Chargrilled salmon with levander, lemon & quinoa sprinkles.",
         "id": "filet"
@@ -79,7 +79,7 @@
     "grilled": [
       {
         "name": "Escalope de Veau",
-        "price": 18.9,
+        "price": 18.5,
         "description": "Sautéed breaded veal escalope with watercress, lemon & sour cream.",
         "id": "escalope"
       },
@@ -109,7 +109,7 @@
       },
       {
         "name": "Pasta on the Grill",
-        "price": 18,
+        "price": 19.5,
         "description": "Al dente, with beef chops & our unique tomato-curry sauce.",
         "id": "pasta"
       }
