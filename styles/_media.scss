@@ -43,7 +43,6 @@
     margin-top: 10rem;
   }
 }
-
 @media screen and (min-width: 400px) and (max-width: 450px) {
   html {
     font-size: 44%;
@@ -72,7 +71,6 @@
     grid-template-rows: 2fr repeat(3, 0.65fr);
   }
 }
-
 @media screen and (min-width: 768px) {
   html {
     font-size: 62.5%;
@@ -104,11 +102,6 @@
     row-gap: 2.7rem;
   }
 }
-@media screen and (min-width: 1024px) and (min-height: 1365px) {
-  .wines {
-    row-gap: 3.7rem;
-  }
-}
 @media screen and (max-width: 800px) and (min-height: 1279px) {
   .main {
     gap: 2rem 1rem;
@@ -122,5 +115,59 @@
   .main-contact {
     gap: 0;
     margin-top: 7.5rem;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 1365px) {
+  .wines {
+    row-gap: 3.7rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  html {
+    font-size: 70.5%;
+  }
+  .button-active::after,
+  .contact-active::after {
+    width: 30%;
+  }
+  .main {
+    @include grid(repeat(6, 1fr), 1fr);
+    height: 96%;
+    align-items: center;
+  }
+  .main-contact {
+    @include grid(1.5fr 1fr, 1fr);
+    height: 85%;
+    .big-info-wrapper {
+      width: 100%;
+      height: 100%;
+      @include grid(1fr, auto);
+    }
+  }
+  .map-wrapper {
+    height: 100%;
+  }
+  .data-wrapper {
+    margin-top: 1rem;
+  }
+  .menu-item {
+    width: 100%;
+    height: 80%;
+    grid-template-rows: auto auto minmax(5vh, 20vh) minmax(auto, 5vh);
+  }
+}
+@media screen and (min-width: 2000px) {
+  html {
+    font-size: 90%;
+  }
+}
+@media screen and (min-width: 3000px) {
+  html {
+    font-size: 110%;
+  }
+}
+@media screen and(min-width: 3800px) {
+  html {
+    font-size: 130%;
   }
 }
