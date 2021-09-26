@@ -1,4 +1,3 @@
-import { createContactPage } from "../structure/contact.handle";
 import menuHandler from "/structure/menu.handle.js";
 import "../node_modules/@fortawesome/fontawesome-free/js/all";
 
