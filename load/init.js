@@ -2,6 +2,7 @@ import data from "/menu-data.json";
 import Component from "/components/component.service.js";
 import { addContent } from "../load/layout.js";
 import { resetDOM, correctMainClass } from "../structure/menu.change";
+import { create } from "./layout";
 
 function initPage() {
   const main = document.querySelector("main");
@@ -26,4 +27,17 @@ function initializeContent() {
   startersBtn.classList.add("button-active");
   addContent("starters");
 }
-export { initPage as init, initializeContent };
+function reRenderContactPage() {
+  const phoneDiv = document.querySelector(".phone-big");
+  const addressDiv = document.querySelector(".address-big");
+  const emailDiv = document.querySelector(".email-big");
+  const main = document.querySelector(".main");
+  if (window.screen.width >= 1200) {
+    const infoWrapperDiv = main.appendChild(create("div", "big-info-wrapper"));
+    infoWrapperDiv.appendChild(phoneDiv);
+    infoWrapperDiv.appendChild(addressDiv);
+    infoWrapperDiv.appendChild(emailDiv);
+  }
+}
+
+export { initPage as init, initializeContent, reRenderContactPage };
