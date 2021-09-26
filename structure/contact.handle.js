@@ -1,6 +1,7 @@
 import { resetDOM } from "./menu.change.js";
 import contactData from "/contact-data.json";
 import { create } from "../load/layout";
+import { reRenderContactPage } from "../load/init";
 
 // renders the contact page & content
 function createContactPage() {
@@ -30,6 +31,7 @@ function createContactPage() {
     keyData.textContent =
       key === "phone" ? phone : key === "address" ? address : email;
   });
+  reRenderContactPage();
   populateContactMap();
 }
 // populates the contact page with the map img
