@@ -72,7 +72,9 @@ function addContent(category) {
     );
     // image handling
     const imgElement = element.children[0].children[0];
-    const img = `/src/img/${category}/${`${identifier}`}.jpg`;
+    // console.log(element.classList[2]);
+    imgElement.classList.add(element.classList[2]);
+    const img = `./${category}/${`${identifier}`}.jpg`;
     imgElement.setAttribute("src", img);
     // h2 handling
     element.children[1].children[0].textContent = targetedObject.name;
