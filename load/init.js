@@ -23,7 +23,6 @@ function initializeContent() {
   });
   allBtns.forEach((button) => button.classList.remove("button-active"));
   ctcBtn.classList.remove("contact-active");
-  console.log(allBtns);
   startersBtn.classList.add("button-active");
   addContent("starters");
 }
