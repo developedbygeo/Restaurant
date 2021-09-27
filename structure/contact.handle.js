@@ -38,6 +38,6 @@ function createContactPage() {
 function populateContactMap() {
   const mapWrapper = document.querySelector(".map-wrapper");
   const img = mapWrapper.appendChild(create("img", "map-img"));
-  img.setAttribute("src", "/src/img/map/location-img.JPG");
+  img.setAttribute("src", "./map/location-img.JPG");
 }
 export { createContactPage };
