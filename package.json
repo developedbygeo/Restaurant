@@ -13,6 +13,7 @@
   "author": "developedbygeo",
   "license": "MIT",
   "devDependencies": {
+    "copy-webpack-plugin": "^9.0.1",
     "css-loader": "^6.3.0",
     "html-webpack-plugin": "^5.3.2",
     "node-sass": "^6.0.1",
