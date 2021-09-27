@@ -24,6 +24,11 @@
     font-size: 42%;
   }
 }
+@media screen and (max-width: 360px) and (min-height: 640px) {
+  .wines {
+    row-gap: 2.5rem;
+  }
+}
 @media screen and (max-width: 375px) and (min-height: 739px) {
   .main {
     margin-top: 6rem;
@@ -82,6 +87,9 @@
     gap: 0;
     grid-template-rows: 2fr repeat(3, minmax(5vh, 10vh));
   }
+  .button-active {
+    border: 4px solid $cultured;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 833px) {
   .menu-item {
@@ -126,6 +134,11 @@
   html {
     font-size: 70.5%;
   }
+  header {
+    height: 20vh;
+    grid-template-rows: 1fr 1fr;
+  }
+
   .button-active::after,
   .contact-active::after {
     width: 30%;
@@ -174,6 +187,6 @@
 }
 @media screen and(min-width: 3800px) {
   html {
-    font-size: 130%;
+    font-size: 160%;
   }
 }
